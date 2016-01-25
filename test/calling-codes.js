@@ -20,7 +20,7 @@ describe('calling codes', function () {
     });
   });
 
-  describe('callingCountries', function () {
+  describe.skip('callingCountries', function () {
 
     // console.log(callingCountries);
 

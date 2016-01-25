@@ -7,7 +7,7 @@ var _ = require('underscore');
 
 describe('regions', function () {
 
-  describe("check region's countries are known", function () {
+  describe.skip("check region's countries are known", function () {
     _.each(regions, function (region, name) {
       describe(name, function () {
         _.each(region.countries, function (country) {
@@ -43,7 +43,7 @@ describe('regions', function () {
     });
   });
 
-  describe("check all assigned countries are in regions", function() {
+  describe.skip("check all assigned countries are in regions", function() {
     var countriesAssigned = [];
     var countriesAvailable = [];
 
