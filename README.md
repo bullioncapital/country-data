@@ -139,11 +139,25 @@ cd country-data
 # install the dependencies
 npm install .
 
+---
+## MD-SPECIFIC: Generate the countries list from the MD db countries table
+
+# use this query:
+select name, iso2, iso3, '', '', currency, '', '', 'assigned' from countries;
+
+# remove any commas nested in the country names (currently only in 'Hong Kong S.A.R., China' and 'Macao S.A.R., China')
+# now continue with the non-MD steps
+---
+
 # Edit the countries.csv
 open data/countries.csv
 
 # Convert the raw data (CSV or JS files) to JSON
 make
+
+---
+## MD-SPECIFIC: Find the entries in the generated JSON for the country names with commas and add them back in.
+---
 
 # Run the tests
 mocha
