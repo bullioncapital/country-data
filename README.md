@@ -145,7 +145,7 @@ npm install .
 # use this query:
 select name, iso2, iso3, '', '', currency, '', '', 'assigned' from countries;
 
-# remove any commas nested in the country names (currently only in 'Hong Kong S.A.R., China' and 'Macao S.A.R., China')
+# remove any commas nested in the country names (currently only in 'Macao S.A.R., China')
 # now continue with the non-MD steps
 ----
 
